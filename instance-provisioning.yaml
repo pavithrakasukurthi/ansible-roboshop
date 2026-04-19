@@ -16,7 +16,7 @@
      name: "{{ item }}"
      instance_type: t3.micro
      image_id: "{{ ami_id }}"
-     seciruty_group: "{{ sg_id }}"
+     security_group: "{{ sg_id }}"
      tags:
       Name: "{{ item }}"
     loop: "{{ instances }}"
