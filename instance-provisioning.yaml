@@ -8,7 +8,7 @@
    zone_id: "Z0034753Q3D37U6HFEYZ"
    domain_name: "pavithra.sbs"
    instances: 
-    - mongodb
+    - redis
 
   tasks:
   - name: creating instances
