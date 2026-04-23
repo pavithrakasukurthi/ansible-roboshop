@@ -37,6 +37,7 @@
   - name: removing user zip file
     ansible.builtin.file:
      path: /tmp/user.zip
+     state: absent
 
   - name: downloading user zip file 
     ansible.builtin.get_url:
