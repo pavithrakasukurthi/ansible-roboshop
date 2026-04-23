@@ -8,16 +8,8 @@
    zone_id: "Z0034753Q3D37U6HFEYZ"
    domain_name: "pavithra.sbs"
    instances: 
-    - mongodb
-    - catalogue
-    - user
-    - redis
-    - rabbbitmq
-    - cart
-    - payment
-    - frontend
-    - shipping
-    - mysql
+    - rabbitmq
+    
 
   tasks:
   - name: creating instances
