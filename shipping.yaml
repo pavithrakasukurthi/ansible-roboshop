@@ -72,6 +72,7 @@
   - name: import shipping data into mysql
     community.mysql.mysql_db:
      state: import
+     name: all 
      login_host: mysql.pavithra.sbs
      login_user: root
      login_password: RoboShop@1
