@@ -5,8 +5,8 @@
   tasks:
   - name: creating rabbbitmq repo
     ansible.builtin.copy:
-    src: rabbbitmq.repo
-    dest: /etc/yum.repos.d/rabbbitmq.repo
+     src: rabbbitmq.repo
+     dest: /etc/yum.repos.d/rabbbitmq.repo
 
   - name: installing rabbbitmq
     ansible.builtin.package:
