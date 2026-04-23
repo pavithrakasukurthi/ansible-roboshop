@@ -31,7 +31,7 @@
   - name: creating app directory
     ansible.builtin.file:
      path: /app
-      state: present
+     state: present
 
   - name: downloading catalogue app zip file
     ansible.builtin.get_url:
