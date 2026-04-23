@@ -20,6 +20,11 @@
      path: /usr/share/nginx/html/
      state: absent
 
+  - name: creating app directory
+    ansible.builtin.file:
+     path: /usr/share/nginx/html/
+     state: directory
+
   - name: downloading frontend code
     ansible.builtin.get_url:
      url: https://roboshop-artifacts.s3.amazonaws.com/frontend-v3.zip
@@ -28,7 +33,7 @@
   - name: unzipping frontend code
     ansible.builtin.unarchive:
      src: /tmp/frontend.zip
-     dest: /app
+     dest: /usr/share/nginx/html/
      remote_src: yes
 
   - name: deleting default nginx configuration
